@@ -1,5 +1,5 @@
 try:from time import sleep ;from requests import post;from colorama import Fore
-except ModuleNotFoundError:exit('[!] Download The Missing Module !')
+except Exception as e:print(f'[!] Download The Missing Module ! , {e}');exit()
 error,done=0,0
 print(f"""{Fore.LIGHTRED_EX} 
 ████████╗██╗██╗  ██╗      ██████╗███╗   ███╗
